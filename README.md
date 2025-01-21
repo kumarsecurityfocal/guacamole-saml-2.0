@@ -1,4 +1,4 @@
-# Guacamole Server Deployment with NGINX NPM and MariaDB on Ubuntu
+# Guacamole Server Deployment for SAML Integrastion with NGINX NPM and MariaDB on Ubuntu
 
 This guide will walk you through deploying an Apache Guacamole Server using NGINX Proxy Manager (NPM) and MariaDB as the backend database. The deployment will use Docker containers on an Ubuntu system.
 
