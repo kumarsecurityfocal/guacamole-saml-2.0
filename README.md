@@ -40,16 +40,20 @@ Install mysql Client in the MariaDB Container**
 
 Access the guacamole-db container:
 
-docker exec -it guacamole-db bash
+docker exec -it guacamole_db bash
+
 Install the mysql client:
 
 apt-get update
+
 apt-get install mysql-client -y
+
 Exit the container:
-exit
+
 Import the database schema:
 
 docker exec -i guacamole /opt/guacamole/bin/initdb.sh --mysql > initdb.sql
+
 docker exec -i guacamole_db mysql -u root -proot_password guacamole_db < initdb.sql
 
 ### 5 Download and place SAML jar file
